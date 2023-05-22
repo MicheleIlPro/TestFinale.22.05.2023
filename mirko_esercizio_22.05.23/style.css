@@ -1,0 +1,122 @@
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Pagina */
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+  
+.container nav{
+    width: 8vw;
+}
+
+.container nav {
+    
+    background-color: #0b2239;
+    color: #fff;
+}
+  
+.container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.container nav li {
+    text-align: center;
+    padding: 10px 0;
+}
+  
+.container nav a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.container .content {
+    flex: 1;
+    overflow: hidden;
+}
+  
+.page {
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: black;
+    color: white;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    /* Aggiungiamo una animazione semplice */
+    transition: all ease 0.3s;
+}
+  
+div .active {
+    display: block;
+}
+  
+/* Lavoriamo sulle sezioni */
+
+.blocco{
+    display: block;
+}
+
+.centrato_boxed{
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  height: auto;
+  margin: 35vh auto;
+}
+
+.page h1, .page p{
+    text-align: center;
+    padding: 10px;
+}
+
+.page h1{
+    border-radius: 25px;
+    font-size: 40px;
+}
+
+.page p{
+    background-color: gainsboro;
+    color: black;
+    font-size: 20px;
+}
+
+/* diamo l'effetto tondo solo all'ultimo in basso */
+/* così da poter mettere più tag p */
+.page p:last-child{
+    border-radius: 0 0 25px 25px;
+}
+
+.contenitore{
+    background-color: gray;
+    border-radius: 25px;
+    box-shadow: 0 0 10px hsla(60, 100%, 50%, 0.5);
+}
+
+.codice{
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+
+/* altro */
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: hsla(0,0%,100%,.1);
+  }
